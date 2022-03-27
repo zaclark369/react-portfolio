@@ -21,56 +21,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <header>
-      <h1>
-        <a href="index.html">Zachary Clark</a>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#AboutMe">About Me</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#technologies">Technologies</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          
-        </ul>
-      </nav>
-    </header>
+  
     
-    <section className="hero">
-        <div className="hero-container hero-picture">
-          <img src="./assets/images/profile.jpg" alt="Profile Picture" />
-        </div>
-        <div className="hero-container">
-          <a id="AboutMe"></a>
-          <h2>About Me</h2>
-          <p className="paragraphdesc">
-            I am an aspiring web developer who loves to work on exciting and
-            challenging projects. I have worked in several fields, with my current focus on contract processing and system
-            improvement. 
-          </p>
-        </div>
-        <div className="herotext">
-          <div className="herotexttop">
-            <h1>I’m ready to design your website and build it</h1>
-            <p className="paragraphdesc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus quasi obcaecati rerum magnam qui soluta, minus
-              recusandae eaque culpa autem tempore saepe dolorum vero reiciendis
-              illum nobis magni ratione blanditiis.
-              <br />
-            </p>
-          </div> 
-           <a href="#capabilities" className="buttondown">Check out my capabilities</a> 
-        </div>
-    </section>
+ 
 <br/>
  
     <main>
@@ -213,27 +166,6 @@ function App() {
       </section>
     </main>
 
-    <footer>
-      <a id="contact"></a>
-      <h2>Contact:</h2>
-      <h3>
-        <a href="https://www.linkedin.com/in/zachary-aclark/" target="_blank"
-          ><img src="./assets/images/linkedin.svg" alt="linkedin logo as link"
-        /></a>
-      </h3>
-      <h3>
-        <a href="https://github.com/zaclark369" target="_blank"
-          ><img src="./assets/images/github.svg" alt="github logo as a link"
-        /></a>
-      </h3>
-      <h3 id="resume">
-        <a href="">Download Resume</a>
-      </h3>
-      <h3>
-        <a href="mailto:zacclark369@gmail.com">Email</a>
-      </h3>
-      <p>&copy; 2021 Zachary Clark</p>
-    </footer>
     </div>
   );
 }
