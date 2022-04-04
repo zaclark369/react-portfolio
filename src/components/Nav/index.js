@@ -1,26 +1,27 @@
 import React from 'react';
 
 
-function Nav({view, setView}) {
-
-  function clickHandler(e) {
-    (e.target.type === 'button') && setView(e.target.name);
-  }
+function Nav(props) {
 
     return (
         
-        <nav onclick={clickHandler}>
-          
-              <button className={`${view == "About" && "nav-selected"}`} type = 'button' name= "about">About Me</button>
-            
-              <button className={`${view == "Portfolio" && "nav-selected"}`} type = 'button' name= "portfolio">Portfolio</button>
-            
-              <button className={`${view == "Resume" && "nav-selected"}`} type = 'button' name= "resume">Resume</button>
-            
-              <button className={`${view == "Contact" && "nav-selected"}`} type = 'button' name= "contact">Contact</button>
-            
-        </nav>
-     
+        <header>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
+                    <li className = "navbar-brand"></li>
+                    <div className="navbar-collapse collapse" id='navbarSupportedContent'>
+                      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li className="nav-link" onClick={() => props.handleView('default')}>Home
+                            </li>
+                            <li className="nav-link" onClick={() => props.handleView('portfolio')}>Portfolio</li>
+                            <li className="nav-link" onClick={() => props.handleView('about')}>About</li>
+                            <li className="nav-link" onClick={() => props.handleView('contact')}>Contact</li>
+                      </ul>
+                    </div>
+
+                </div>
+                </nav>
+        </header>
     )
 }
 
