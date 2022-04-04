@@ -7,12 +7,13 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
 
  const [view, setView] = useState("About")
   
-  const renderView = (page) => {
+  const handleView = (page) => {
     setView(page);
     }
   
@@ -20,13 +21,13 @@ function App() {
   return (
     <div className="App">
       <Header
-          handleView={renderView}>
+          handleView={handleView}>
         </Header>
       <main>
         {(() => {
       switch (view) {
       case "About":
-        return <About handleView={renderView}></About>
+        return <About handleView={handleView}></About>
         case "Contact": 
         return (<Contact/>)
         case "Portfolio":
@@ -39,6 +40,11 @@ function App() {
           }
         })()}
             </main>
+            <About></About>
+            
+            <Portfolio></Portfolio>
+            <Contact></Contact>
+            <Resume></Resume>
       <Footer></Footer>
    </div>
    
