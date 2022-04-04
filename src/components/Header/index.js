@@ -5,15 +5,15 @@ import profile from '../../assets/images/profile.jpg';
 const Header = ({view, setView}) => {
 
     return (
-        <header>
-            <div id = "title">
+        <div className="row d-flex justify-content-center m-3">
+            <div id = "title" className="col-sm-3">
                 <h1>Zachary Clark</h1>
-                <img id="profile" src= {profile} alt = "Zachary Clark; Web Developer" />
+                <img className="figure-img img-fluid" id="profile" src= {profile} alt = "Zachary Clark; Web Developer" />
                 <h2>Full Stack Web Developer</h2>
             </div>
 
             <Nav view = {view} setView = {setView}/>
-        </header>
+        </div>
     )
 }
 
