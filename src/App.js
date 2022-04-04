@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -13,10 +12,21 @@ function App() {
 
  const [view, setView] = useState("About")
   
-  function render(current) {
-    switch (current) {
+  const renderView = (page) => {
+    setView(page);
+    }
+  
+
+  return (
+    <div className="App">
+      <Header
+          handleView={renderView}>
+        </Header>
+      <main>
+        {(() => {
+      switch (view) {
       case "About":
-        return (<About/>)
+        return <About handleView={renderView}></About>
         case "Contact": 
         return (<Contact/>)
         case "Portfolio":
@@ -25,15 +35,10 @@ function App() {
           //   return (<Resume/>)
           default:
             break;
-    }
-  }
 
-  return (
-    <div classNameName="App">
-      <Header view={view} setView= {setView}/>
-      
-      {render(view)}
-
+          }
+        })()}
+            </main>
       <Footer></Footer>
    </div>
    
