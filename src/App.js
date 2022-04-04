@@ -23,8 +23,8 @@ function App() {
       <Header
           handleView={handleView}>
         </Header>
-      <main>
-        {(() => {
+      
+        {/* {(() => {
       switch (view) {
       case "About":
         return <About handleView={handleView}></About>
@@ -38,8 +38,8 @@ function App() {
             break;
 
           }
-        })()}
-            </main>
+        })()} */}
+            
             <About></About>
             
             <Portfolio></Portfolio>

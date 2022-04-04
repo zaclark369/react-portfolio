@@ -1,7 +1,10 @@
+import React from 'react';
 
 
 
+function Skills(props) {
 
+    return (
 <section className="skills" id="technologies">
            <div className="section-title">
             <h2>Skills</h2>
@@ -36,3 +39,7 @@
                </ul>
            </div>
         </section>
+
+)}
+
+export default Skills;
