@@ -2,6 +2,11 @@
   --background-color: #110022;
   --primary-color: #66ccff;
   --secondary-color: #0066cc;
+  --primary:#f8b195;
+  --secondary: #f67280;
+  --tertiary: #c06c84;
+  --quadiary: #6c5b7b;
+  --cinciary: #355c7d;
 }
 
 body {
@@ -11,6 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ background-color: var(--primary)!important;
 }
 
 code {
