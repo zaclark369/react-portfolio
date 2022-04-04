@@ -9,7 +9,7 @@ import Portfolio from './components/Portfolio';
 
 function App() {
 
-  // const [view, setView] = useState('About');
+  const [view, setView] = useState('About');
 
   return (
     <div classNameName="App">
