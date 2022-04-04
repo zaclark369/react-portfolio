@@ -12,10 +12,10 @@ function Nav(props) {
               <a href="#AboutMe">About Me</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#technologies">Technologies</a>
+              <a href="#resume">Resume</a>
             </li>
             <li>
               <a href="#contact">Contact</a>

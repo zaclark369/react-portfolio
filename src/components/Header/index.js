@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav';
-import profile from '../../../public/assets/images/profile.jpg';
+import profile from '../../assets/images/profile.jpg';
 
 const Header = ({view, setView}) => {
 
