@@ -1,29 +1,26 @@
 import React from 'react';
 
-function Nav(props) {
+
+function Nav({view, setView}) {
+
+  function clickHandler(e) {
+    (e.target.type === 'button') && setView(e.target.name);
+  }
+
     return (
-        <header>
-        <h1>
-          <a href="index.html">Zachary Clark</a>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#AboutMe">About Me</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+        
+        <nav onclick={clickHandler}>
+          
+              <button className={`${view == "About" && "nav-selected"}`} type = 'button' name= "about">About Me</button>
             
-          </ul>
+              <button className={`${view == "Portfolio" && "nav-selected"}`} type = 'button' name= "portfolio">Portfolio</button>
+            
+              <button className={`${view == "Resume" && "nav-selected"}`} type = 'button' name= "resume">Resume</button>
+            
+              <button className={`${view == "Contact" && "nav-selected"}`} type = 'button' name= "contact">Contact</button>
+            
         </nav>
-      </header>
+     
     )
 }
 
