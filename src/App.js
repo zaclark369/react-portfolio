@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./index.css"
 
 import './App.css';
 import Nav from './components/Nav';
@@ -11,41 +12,31 @@ import Resume from './components/Resume';
 
 function App() {
 
- const [view, setView] = useState("About")
+ const [view, setView] = useState("about")
   
-  const handleView = (page) => {
-    setView(page);
-    }
+  // const handleView = (page) => {
+  //   setView(page);
+  //   }
   
 
   return (
     <div className="App">
-      <Header
-          handleView={handleView}>
-        </Header>
+      <Header></Header>
+        <Nav view={view} setView={setView}></Nav>
       
-        {/* {(() => {
-      switch (view) {
-      case "About":
-        return <About handleView={handleView}></About>
-        case "Contact": 
-        return (<Contact/>)
-        case "Portfolio":
-          return (<Portfolio/>)
-          // case Resume:
-          //   return (<Resume/>)
-          default:
-            break;
-
-          }
-        })()} */}
-            
-            <About></About>
-            
-            <Portfolio></Portfolio>
-            <Contact></Contact>
-            <Resume></Resume>
-      <Footer></Footer>
+      <main>
+      {view !== "contact" ? (
+        <>
+        {view !== "about" && <About/>}
+        {view !== "portfolio" && <Portfolio/>}
+        {view !== "resume" && <Resume/>}
+        
+        </>
+      ) : (
+        <Contact />
+      )}
+      </main>
+      <Footer className="d-flex"></Footer>
    </div>
    
   );

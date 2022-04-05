@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../Nav';
 
 
-const Header = ({handleView}) => {
+const Header = ({view, setView}) => {
 
     return (
         <div className="row d-flex justify-content-center m-3">
@@ -12,7 +12,7 @@ const Header = ({handleView}) => {
                 <h2>Full Stack Web Developer</h2>
             </div>
 
-            <Nav handleView={handleView}></Nav>
+            {/* <Nav view={view} setView={setView}></Nav> */}
         </div>
     )
 }

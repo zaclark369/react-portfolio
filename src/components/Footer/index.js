@@ -23,7 +23,7 @@ function Footer(props){
      
         <a href="mailto:zacclark369@gmail.com"><img src={mailto} alt="mailto"></img></a>
       
-      <p>&copy; 2021 Zachary Clark</p>
+      <p>&copy; 2022 Zachary Clark</p>
  
       </div>
     )
