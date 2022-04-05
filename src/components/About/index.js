@@ -9,7 +9,7 @@ function About(props) {
       <p className="paragraphdesc">
         I am an aspiring web developer who loves to work on exciting and
         challenging projects. I have worked in several fields, with my current
-        focus on contract processing and system improvement.
+        focus on business system analysis and system improvement.
       </p>
       <img className="figure-img img-fluid" id="profile" src= {profile} alt = "Zachary Clark; Web Developer" />
     </div>

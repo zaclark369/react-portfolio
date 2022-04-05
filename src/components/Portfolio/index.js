@@ -8,7 +8,7 @@ function Portfolio() {
   
   const [projects] = useState([
     {
-      name: 'chewview',
+      name: 'Chew View',
       repo: 'https://github.com/ChristopherLawn/team-1-dinner-movie',
       key: 0,
       live: "https://christopherlawn.github.io/team-1-dinner-movie/",
@@ -17,7 +17,7 @@ function Portfolio() {
         image: "chewview.png"
     },
     {
-      name: 'pantry',
+      name: 'Pantry',
       repo: 'https://github.com/zaclark369/Pantry',
       key: 2,
       live: "",
@@ -26,7 +26,7 @@ function Portfolio() {
       image: "pantry.png"
     },
     {
-      name: 'passwordgenerator',
+      name: 'Password Generator',
       repo: 'https://github.com/zaclark369/Password-Generator',
       key: 3,
       live: "",
@@ -35,7 +35,7 @@ function Portfolio() {
       image: "password.png"
     },
     {
-      name: 'socialnetwork',
+      name: 'Have you tried being SOCIAL?',
       repo: 'https://github.com/zaclark369/have-you-tried-being-social',
       key: 4,
       live: "",
@@ -79,7 +79,7 @@ function Portfolio() {
 
 <>
 {projects.map((project) => (
-  <div className="py-3" key={`portfolio${project.key}`}>
+  <div className="py-3 card" key={`portfolio${project.key}`}>
     <h2 key={`h${project.key}`}>
       <a
         href={project.live}
@@ -90,21 +90,23 @@ function Portfolio() {
         {project.name}
       </a>
     </h2>
-    <div key={`div${project.key}`} className="m-2 d-flex p-2">
-      <p key={`p${project.key}`} className="mx-2 p-2">{project.description}</p>
-      <img
+    <img
+      className="card-img-top"
         src={require(`../../assets/images/${project.image}`)}
         alt={project.name}
         key={`img${project.key}`}
-        width="500"
-        height="300"
+        // width="500"
+        // height="300"
       />
+    <div key={`div${project.key}`} className="m-2 d-flex p-2 card-body">
+      <p key={`p${project.key}`} className="mx-3 p-2 card-text">{project.description}</p>
+      
       <a
         href={project.repo}
         rel="noopener noreferrer"
         target="_blank"
         key={`anchor${project.key}`}
-        className=" px-2"
+        className=" px-2 mx-3 mb-2 btn btn-primary"
       >
         Project GitHub Repository
       </a>

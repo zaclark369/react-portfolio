@@ -64,3 +64,11 @@ a:hover {
 h1 {
   color: var(--tertiary);
 }
+
+.list-group-item {
+  background-color: var(--forth) !important;
+}
+
+.card {
+  background-color: var(--primary) !important;
+}

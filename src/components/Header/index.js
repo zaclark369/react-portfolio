@@ -9,7 +9,6 @@ const Header = ({view, setView}) => {
             <div id = "title" className="col-sm-3">
                 <h1>Zachary Clark</h1>
                 
-                <h2>Full Stack Web Developer</h2>
             </div>
 
             {/* <Nav view={view} setView={setView}></Nav> */}

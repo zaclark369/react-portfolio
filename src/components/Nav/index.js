@@ -45,6 +45,9 @@ function Nav(props) {
                 Contact
               </a>
             </li>
+            {/* <li className="nav-link">
+                <h5 className='btn'>Full Stack Web Developer</h5>
+                </li> */}
           </ul>
         </div>
       </div>
