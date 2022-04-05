@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://zaclark369.github.io/",
+  "homepage": "https://zaclark369.github.io/react-portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
