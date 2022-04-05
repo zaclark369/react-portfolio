@@ -23,7 +23,7 @@ function Portfolio() {
       live: "",
       description:
       "Have you ever wanted to make dinner but can't think of anything. This application will take what you have in your pantry and suggest appropriate recipes using the ingredients you already have. Create an account and you can save your favorites for future viewing. Keyword buttons will help you quickly reach an easy meal to make and visual recipe cards will show you how good home cooking can look.",
-      image: "pantry.jpg"
+      image: "pantry.png"
     },
     {
       name: 'passwordgenerator',
@@ -32,7 +32,7 @@ function Portfolio() {
       live: "",
       description:
       "A website that offers options to choose between 4 different character sets and a length, and then generates a password from those selected options.",
-      image: "password.jpg"
+      image: "password.png"
     },
     {
       name: 'socialnetwork',
@@ -41,7 +41,7 @@ function Portfolio() {
       live: "",
       description:
       "The backend of a social network app. This backend will allow creation of users, thoughts, reactions, and freinding/unfriending other users.",
-      image: "social.jpg"
+      image: "social.png"
     },
     {
       name: 'Jumping Frying Pan',
@@ -50,7 +50,7 @@ function Portfolio() {
       live: "",
       description:
         'A CSS based sidescroller game based on the dino game in chrome. It was built as a simple easter egg for the Pantry project',
-        image: "frying.jpg"
+        image: "frying.png"
     },
     {
       name: 'Employee Tracker',
@@ -59,7 +59,7 @@ function Portfolio() {
       live: "",
       description:
       "AS A business owner I WANT to be able to view and manage the departments, roles, and employees in my company SO THAT I can organize and plan my business",
-      image: "employee.jpg"
+      image: "employee.PNG"
     },
   ]);
   
@@ -80,31 +80,31 @@ function Portfolio() {
 <>
 {projects.map((project) => (
   <div className="py-3" key={`portfolio${project.key}`}>
-    <h2 key={`${project.key}`}>
+    <h2 key={`h${project.key}`}>
       <a
-        href={project.projectDeployment}
+        href={project.live}
         rel="noopener noreferrer"
         target="_blank"
         className="text-decoration-none project-header"
       >
-        {project.title}
+        {project.name}
       </a>
     </h2>
-    <div key={`div${project.key}`} className="m-2 d-flex project p-2">
-      <p key={`p${project.key}`} className="project-des mx-2 p-2">{project.description}</p>
-      {/* <img
+    <div key={`div${project.key}`} className="m-2 d-flex p-2">
+      <p key={`p${project.key}`} className="mx-2 p-2">{project.description}</p>
+      <img
         src={require(`../../assets/images/${project.image}`)}
-        alt={project.title}
+        alt={project.name}
         key={`img${project.key}`}
         width="500"
         height="300"
-      /> */}
+      />
       <a
-        href={project.projectRepo}
+        href={project.repo}
         rel="noopener noreferrer"
         target="_blank"
         key={`anchor${project.key}`}
-        className="project-gh text-decoration-none px-2"
+        className=" px-2"
       >
         Project GitHub Repository
       </a>
