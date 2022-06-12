@@ -4,45 +4,46 @@ function Nav(props) {
   const { view, setView } = props;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <li className="navbar-brand"></li>
-        <div className="navbar-collapse collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <div className = "navigation">
+          <ul>
             {/* <li className="nav-link" onClick={() => props.handleView('default')}>Home
                             </li> */}
 
-            <li className="nav-link">
+            <li className="list">
               <a href="#About" className="btn" onClick={() => setView("about")}>
-                About
+                <span className="icon"></span>
+                <span className="text">About</span>
               </a>
             </li>
-            <li className="nav-link">
+            <li className="list">
               <a
                 href="#Portfolio"
                 className="btn"
                 onClick={() => setView("portfolio")}
               >
-                Portfolio
+                <span className="icon"></span>
+                <span className="text">Portfolio</span>
               </a>
             </li>
-            <li className="nav-link">
+            <li className="list">
               <a
                 href="#Resume"
                 className="btn"
                 onClick={() => setView("resume")}
               >
-                Resume
+                <span className="icon"></span>
+                <span className="text">Resume</span>
               </a>
             </li>
 
-            <li className="nav-link">
+            <li className="list">
               <a
                 href="#Contact"
                 className="btn"
                 onClick={() => setView("contact")}
               >
-                Contact
+                <span className="icon"></span>
+                <span className="text">Contact</span>
               </a>
             </li>
             {/* <li className="nav-link">
@@ -50,8 +51,6 @@ function Nav(props) {
                 </li> */}
           </ul>
         </div>
-      </div>
-    </nav>
   );
 }
 
