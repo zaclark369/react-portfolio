@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 
+
 function App() {
   const [view, setView] = useState("about");
 
