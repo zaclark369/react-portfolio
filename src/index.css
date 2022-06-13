@@ -194,3 +194,141 @@ p {
 .card {
   background-color: var(--primary) !important;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* projects css section */
+
+.project-card-container{
+  padding-left: 10vw;
+  width: 75vw;
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+flex-flow: row wrap;
+}
+
+.project-card {
+
+  min-width: 30%;
+  min-height: 40vh;
+  /* background-color: aliceblue; */
+  background:var(  --secondary-color);
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 20vw;
+  height: 100%;
+  border: 3px solid var(--primary-color) ;
+  border-radius: 4vw;
+  font-size:1.5vw;
+  box-shadow: inset;
+  animation-name: inFromBelow;
+  transform: scale(1);
+  transition:  .5s;
+  
+  
+}
+.project-card:hover {
+  position: static;
+  z-index: 10;
+
+  transform: scale(1.05);
+  box-shadow: -5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.selected-card {
+
+ 
+  z-index: 11;
+height: 45vh;
+  height: 100%;
+  transform: scale(1.5);
+  box-shadow: -20px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.selected-card:hover {
+ 
+  top:auto;
+  z-index: 11;
+
+  transform: scale(1.5);
+  box-shadow: -20px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h4{
+  pointer-events: none;
+margin-top: 5%;
+font-size: xx-large;
+}
+.project-card p{
+  pointer-events: none;
+  margin-top: 1%;
+  color: var(--text-color);
+  padding: 00px 10px 0px 10px;
+  
+  font-size: x-large;
+}
+.selected-card p {
+  font-size: large;
+}
+
+.git-link{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width:13%;
+  transition: .5s;
+}
+.selected-card .git-link{
+  width:10%;
+}
+.img-container {
+  height: 15%;
+ 
+}
+.selected-card .img-container {
+  height: 10%;
+
+}
+
+.screenshot {
+  animation: fadeIn 1s;
+  border: 1px solid black;
+  border-radius: 25px;
+  align-self: center;
+  max-width: 100%;
+  max-height: 30%;
+  }
+
+.more-info {
+
+  height: 70%;
+}
+.tech-title{
+padding-top: 1px;
+  flex: 1;
+  animation: fadeIn 1.5s;
+  font-weight: bold;
+
+}
+.columns-list{
+  columns: 2;
+  font-size: large;
+  font-weight:normal;
+  list-style-type: none;
+  animation: fadeIn 2s;
+}
+
+
+.project-card .liveLink{
+  text-decoration: none;
+}
+.liveLinkDiv  {
+  
+  margin-top: auto; 
+}
+/* This simply sets an animation to hide a weird transition when a card get larger when selected.  */
+.reset  {
+  animation: fadeIn 3s ;
+  margin-top: auto; 
+}
