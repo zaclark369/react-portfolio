@@ -49,7 +49,7 @@ function Portfolio() {
 
                     <div className="img-container">
                         <a href={data.gitLink} target='__blank'>
-                            <img className="git-link"  src={require('../../assets/images/github.png')} alt="GitHub Link" />
+                            <img className="git-link"  src={require('../../assets/images/github.svg')} alt="GitHub Link" />
                         </a>
                     </div>
 
